@@ -271,6 +271,30 @@ Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
  pass associated column to function expecting dimension(3)
             0            1            2
 
+PGI 19.4
+--------
+
+rm -f a.out
+pgf90 assoc.F90
+pgf90 --version
+
+pgf90 19.4-0 64-bit target on macOS -tp haswell 
+PGI Compilers and Tools
+Copyright (c) 2019, NVIDIA CORPORATION.  All rights reserved.
+./a.out
+ print a column of a matrix
+            0            1            2
+ pass associated column to function expecting dimension(:)
+            0            1            2
+ pass associated column to function expecting dimension(3)
+            0            1            2
+ print an array of derived-type elements
+            0            1            2
+ pass associated column to function expecting dimension(:)
+            0            1            2
+ pass associated column to function expecting dimension(3)
+            0            1            2
+
 NAG 6.1
 -------
 
