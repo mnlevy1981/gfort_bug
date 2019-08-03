@@ -1,7 +1,10 @@
-all: assoc
+FC=gfortran
 
-assoc:
-	gfortran assoc.F90
+all: test
 
-clean:
-	rm a.out
+test:
+	rm -f a.out
+	$(FC) assoc.F90
+	$(FC) --version
+	./a.out
+
