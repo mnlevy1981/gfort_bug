@@ -153,3 +153,141 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+
+IFORT 16
+--------
+
+rm -f a.out
+ifort assoc.F90
+ifort --version
+ifort (IFORT) 16.0.2 20160204
+Copyright (C) 1985-2016 Intel Corporation.  All rights reserved.
+
+./a.out
+ print a column of a matrix
+           0           1           2
+ pass associated column to function expecting dimension(:)
+           0           1           2
+ pass associated column to function expecting dimension(3)
+           0           1           2
+ print an array of derived-type elements
+           0           1           2
+ pass associated column to function expecting dimension(:)
+           0           1           2
+ pass associated column to function expecting dimension(3)
+           0           1           2
+
+IFORT 17
+--------
+
+rm -f a.out
+ifort assoc.F90
+ifort --version
+ifort (IFORT) 17.0.4 20170411
+Copyright (C) 1985-2017 Intel Corporation.  All rights reserved.
+
+./a.out
+ print a column of a matrix
+           0           1           2
+ pass associated column to function expecting dimension(:)
+           0           1           2
+ pass associated column to function expecting dimension(3)
+           0           1           2
+ print an array of derived-type elements
+           0           1           2
+ pass associated column to function expecting dimension(:)
+           0           1           2
+ pass associated column to function expecting dimension(3)
+           0           1           2
+
+IFORT 18
+--------
+
+rm -f a.out
+ifort assoc.F90
+ifort --version
+ifort (IFORT) 18.0.3 20180410
+Copyright (C) 1985-2018 Intel Corporation.  All rights reserved.
+
+./a.out
+ print a column of a matrix
+           0           1           2
+ pass associated column to function expecting dimension(:)
+           0           1           2
+ pass associated column to function expecting dimension(3)
+           0           1           2
+ print an array of derived-type elements
+           0           1           2
+ pass associated column to function expecting dimension(:)
+           0           1           2
+ pass associated column to function expecting dimension(3)
+           0           1           2
+
+PGI 18.1
+--------
+
+rm -f a.out
+pgf90 assoc.F90
+pgf90 --version
+
+pgf90 18.1-1 64-bit target on x86-64 Linux -tp nehalem 
+PGI Compilers and Tools
+Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+./a.out
+ print a column of a matrix
+            0            1            2
+ pass associated column to function expecting dimension(:)
+            0            1            2
+ pass associated column to function expecting dimension(3)
+            0            1            2
+ print an array of derived-type elements
+            0            1            2
+ pass associated column to function expecting dimension(:)
+            0            1            2
+ pass associated column to function expecting dimension(3)
+            0            1            2
+
+PGI 18.10
+---------
+
+rm -f a.out
+pgf90 assoc.F90
+pgf90 --version
+
+pgf90 18.10-0 64-bit target on x86-64 Linux -tp nehalem 
+PGI Compilers and Tools
+Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+./a.out
+ print a column of a matrix
+            0            1            2
+ pass associated column to function expecting dimension(:)
+            0            1            2
+ pass associated column to function expecting dimension(3)
+            0            1            2
+ print an array of derived-type elements
+            0            1            2
+ pass associated column to function expecting dimension(:)
+            0            1            2
+ pass associated column to function expecting dimension(3)
+            0            1            2
+
+NAG 6.1
+-------
+
+rm -f a.out
+nagfor assoc.F90
+NAG Fortran Compiler Release 6.1(Tozai) Build 6106
+[NAG Fortran Compiler normal termination]
+./a.out
+ print a column of a matrix
+ 0 1 2
+ pass associated column to function expecting dimension(:)
+ 0 1 2
+ pass associated column to function expecting dimension(3)
+ 0 1 2
+ print an array of derived-type elements
+ 0 1 2
+ pass associated column to function expecting dimension(:)
+ 0 1 2
+ pass associated column to function expecting dimension(3)
+ 0 1 2
