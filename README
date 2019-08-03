@@ -13,14 +13,21 @@ under the terms of the GNU General Public License.
 For more information about these matters, see the file named COPYING
 
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
+           0           1           2
+ print the associate column
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
            0          10          20
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
            0           1           2
+ print the associate column
+           0          10          20
  pass associated column to function expecting dimension(:)
            0          10          20
  pass associated column to function expecting dimension(3)
@@ -41,12 +48,15 @@ under the terms of the GNU General Public License.
 For more information about these matters, see the file named COPYING
 
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
            0          10          20
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
            0           1           2
  pass associated column to function expecting dimension(:)
@@ -66,12 +76,15 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
            0          10          20
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
            0           1           2
  pass associated column to function expecting dimension(:)
@@ -91,12 +104,15 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
            0          10          20
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
            0           1           2
  pass associated column to function expecting dimension(:)
@@ -116,13 +132,20 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
+           0           1           2
+ print the associate column
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
            0          10          20
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
+           0           1           2
+ print the associate column
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
@@ -141,12 +164,15 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
            0          10          20
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
            0           1           2
  pass associated column to function expecting dimension(:)
@@ -164,12 +190,15 @@ ifort (IFORT) 16.0.2 20160204
 Copyright (C) 1985-2016 Intel Corporation.  All rights reserved.
 
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
            0           1           2
  pass associated column to function expecting dimension(:)
@@ -187,12 +216,15 @@ ifort (IFORT) 17.0.4 20170411
 Copyright (C) 1985-2017 Intel Corporation.  All rights reserved.
 
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
            0           1           2
  pass associated column to function expecting dimension(:)
@@ -210,12 +242,15 @@ ifort (IFORT) 18.0.3 20180410
 Copyright (C) 1985-2018 Intel Corporation.  All rights reserved.
 
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
            0           1           2
  pass associated column to function expecting dimension(:)
@@ -234,13 +269,20 @@ pgf90 18.1-1 64-bit target on x86-64 Linux -tp nehalem
 PGI Compilers and Tools
 Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
+            0            1            2
+ print the associate column
             0            1            2
  pass associated column to function expecting dimension(:)
             0            1            2
  pass associated column to function expecting dimension(3)
             0            1            2
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
+            0            1            2
+ print the associate column
             0            1            2
  pass associated column to function expecting dimension(:)
             0            1            2
@@ -258,13 +300,20 @@ pgf90 18.10-0 64-bit target on x86-64 Linux -tp nehalem
 PGI Compilers and Tools
 Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
+            0            1            2
+ print the associate column
             0            1            2
  pass associated column to function expecting dimension(:)
             0            1            2
  pass associated column to function expecting dimension(3)
             0            1            2
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
+            0            1            2
+ print the associate column
             0            1            2
  pass associated column to function expecting dimension(:)
             0            1            2
@@ -282,12 +331,15 @@ pgf90 19.4-0 64-bit target on macOS -tp haswell
 PGI Compilers and Tools
 Copyright (c) 2019, NVIDIA CORPORATION.  All rights reserved.
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
             0            1            2
  pass associated column to function expecting dimension(:)
             0            1            2
  pass associated column to function expecting dimension(3)
             0            1            2
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
             0            1            2
  pass associated column to function expecting dimension(:)
@@ -303,13 +355,20 @@ nagfor assoc.F90
 NAG Fortran Compiler Release 6.1(Tozai) Build 6106
 [NAG Fortran Compiler normal termination]
 ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
+ 0 1 2
+ print the associate column
  0 1 2
  pass associated column to function expecting dimension(:)
  0 1 2
  pass associated column to function expecting dimension(3)
  0 1 2
+
+ (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
+ 0 1 2
+ print the associate column
  0 1 2
  pass associated column to function expecting dimension(:)
  0 1 2

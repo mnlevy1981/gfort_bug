@@ -21,18 +21,26 @@ Program assoc
   end do
 
   ! (1) basic version of bug
+  print*, '(1) Associate pointing to non-contiguous memory in a 3x3 matrix'
   associate(col => mat(1,:))
     print*, 'print a column of a matrix'
     print*, mat(1,:)
+    print*, 'print the associate column'
+    print*, col
     print*, 'pass associated column to function expecting dimension(:)'
     call print_vec_colon(col)
     print*, 'pass associated column to function expecting dimension(3)'
     call print_vec_num(col)
   end associate
 
+  ! (2) how bug presents itself in MARBL?
+  print*, ''
+  print*, '(2) Associate pointing to scalar element in an array of derived type'
   associate(col => mat_type(:)%a)
     print*, 'print an array of derived-type elements'
     print*, mat_type(:)%a
+    print*, 'print the associate column'
+    print*, col
     print*, 'pass associated column to function expecting dimension(:)'
     call print_vec_colon(col)
     print*, 'pass associated column to function expecting dimension(3)'
