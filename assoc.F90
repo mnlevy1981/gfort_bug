@@ -5,21 +5,27 @@ Program assoc
 
   do j=1,3
     do i=1,3
-      mat(i,j) = real(10*i + j)
+      mat(i,j) = real(10*(i-1) + j-1)
     end do
   end do
 
-  associate(col => mat(2,:), row => mat(:,2))
-    call print_vec(mat(2,:))
-    call print_vec(col)
-    print*, '----'
-    call print_vec(mat(:,2))
-    call print_vec(row)
+  associate(col => mat(1,:))
+    print*, mat(1,:)
+    call print_vec_colon(col)
+    call print_vec_num(col)
   end associate
 
 contains
 
-  subroutine print_vec(vec)
+  subroutine print_vec_colon(vec)
+
+    real :: vec(:)
+
+    print*, vec
+
+  end subroutine
+
+  subroutine print_vec_num(vec)
 
     real :: vec(3)
 
