@@ -362,6 +362,8 @@ Copyright (c) 2019, NVIDIA CORPORATION.  All rights reserved.
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
             0            1            2
+ print the associate column
+            0            1            2
  pass associated column to function expecting dimension(:)
             0            1            2
  pass associated column to function expecting dimension(3)
@@ -369,6 +371,8 @@ Copyright (c) 2019, NVIDIA CORPORATION.  All rights reserved.
 
  (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
+            0            1            2
+ print the associate column
             0            1            2
  pass associated column to function expecting dimension(:)
             0            1            2
