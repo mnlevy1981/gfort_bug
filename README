@@ -1,4 +1,4 @@
-GFORTRAN 4.8
+GFORTRAN 4.8 (netbook)
 ------------
 
 rm -f a.out
@@ -26,7 +26,7 @@ For more information about these matters, see the file named COPYING
  pass associated column to function expecting dimension(3)
            0          10          20
 
-GFORTRAN 5
+GFORTRAN 5 (netbook)
 ----------
 
 rm -f a.out
@@ -54,7 +54,7 @@ For more information about these matters, see the file named COPYING
  pass associated column to function expecting dimension(3)
            0           1           2
 
-GFORTRAN 6
+GFORTRAN 6 (netbook)
 ----------
 
 rm -f a.out
@@ -79,7 +79,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  pass associated column to function expecting dimension(3)
            0           1           2
 
-GFORTRAN 7
+GFORTRAN 7 (netbook)
 ----------
 
 rm -f a.out
@@ -104,7 +104,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  pass associated column to function expecting dimension(3)
            0           1           2
 
-GFORTRAN 8
+GFORTRAN 8 (netbook)
 ----------
 
 rm -f a.out
@@ -129,7 +129,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  pass associated column to function expecting dimension(3)
            0           1           2
 
-GFORTRAN 9
+GFORTRAN 9 (netbook)
 ----------
 
 rm -f a.out
@@ -154,7 +154,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  pass associated column to function expecting dimension(3)
            0           1           2
 
-IFORT 16
+IFORT 16 (hobart)
 --------
 
 rm -f a.out
@@ -177,7 +177,7 @@ Copyright (C) 1985-2016 Intel Corporation.  All rights reserved.
  pass associated column to function expecting dimension(3)
            0           1           2
 
-IFORT 17
+IFORT 17 (hobart)
 --------
 
 rm -f a.out
@@ -200,7 +200,7 @@ Copyright (C) 1985-2017 Intel Corporation.  All rights reserved.
  pass associated column to function expecting dimension(3)
            0           1           2
 
-IFORT 18
+IFORT 18 (hobart)
 --------
 
 rm -f a.out
@@ -223,7 +223,7 @@ Copyright (C) 1985-2018 Intel Corporation.  All rights reserved.
  pass associated column to function expecting dimension(3)
            0           1           2
 
-PGI 18.1
+PGI 18.1 (hobart)
 --------
 
 rm -f a.out
@@ -247,7 +247,7 @@ Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
  pass associated column to function expecting dimension(3)
             0            1            2
 
-PGI 18.10
+PGI 18.10 (hobart)
 ---------
 
 rm -f a.out
@@ -271,7 +271,7 @@ Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
  pass associated column to function expecting dimension(3)
             0            1            2
 
-PGI 19.4
+PGI 19.4 (work laptop)
 --------
 
 rm -f a.out
@@ -295,7 +295,7 @@ Copyright (c) 2019, NVIDIA CORPORATION.  All rights reserved.
  pass associated column to function expecting dimension(3)
             0            1            2
 
-NAG 6.1
+NAG 6.1 (hobart)
 -------
 
 rm -f a.out
