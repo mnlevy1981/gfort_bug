@@ -51,6 +51,8 @@ For more information about these matters, see the file named COPYING
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
+ print the associate column
+           0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
@@ -58,6 +60,8 @@ For more information about these matters, see the file named COPYING
 
  (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
+           0           1           2
+ print the associate column
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
@@ -79,6 +83,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
+ print the associate column
+           0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
@@ -86,6 +92,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
  (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
+           0           1           2
+ print the associate column
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
@@ -107,6 +115,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
+ print the associate column
+           0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
@@ -114,6 +124,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
  (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
+           0           1           2
+ print the associate column
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
@@ -167,6 +179,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
+ print the associate column
+           0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
  pass associated column to function expecting dimension(3)
@@ -174,6 +188,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
  (2) Associate pointing to scalar element in an array of derived type
  print an array of derived-type elements
+           0           1           2
+ print the associate column
            0           1           2
  pass associated column to function expecting dimension(:)
            0           1           2
