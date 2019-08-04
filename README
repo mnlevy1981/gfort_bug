@@ -33,6 +33,41 @@ For more information about these matters, see the file named COPYING
  pass associated column to function expecting dimension(3)
            0          10          20
 
+GFORTRAN 4.9 (netbook)
+------------
+
+rm -f a.out assoc.o
+gfortran-4.9 assoc.F90
+gfortran-4.9 --version
+GNU Fortran (Ubuntu 4.9.4-2ubuntu1~14.04.1) 4.9.4
+Copyright (C) 2015 Free Software Foundation, Inc.
+
+GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
+You may redistribute copies of GNU Fortran
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING
+
+./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
+ print a column of a matrix
+           0           1           2
+ print the associate column
+           0           1           2
+ pass associated column to function expecting dimension(:)
+           0           1           2
+ pass associated column to function expecting dimension(3)
+           0          10          20
+
+ (2) Associate pointing to scalar element in an array of derived type
+ print an array of derived-type elements
+           0           1           2
+ print the associate column
+           0           1           2
+ pass associated column to function expecting dimension(:)
+           0           1           2
+ pass associated column to function expecting dimension(3)
+           0           1           2
+
 GFORTRAN 5 (netbook)
 ----------
 
