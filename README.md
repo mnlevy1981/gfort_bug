@@ -1,3 +1,15 @@
+## About
+
+When testing a [new pull request](https://github.com/marbl-ecosys/MARBL/pull/338) for MARBL, I had [TravisCI tests fail](https://travis-ci.org/marbl-ecosys/MARBL/builds/567023996) because changing the number of MARBL instances changed answers (it was bit-for-bit on my laptop). I traced the problem to [a specific type of `associate` statement](https://github.com/marbl-ecosys/MARBL/blob/10409e9dc6bd1c7650238304a5dec2811737f169/src/marbl_co2calc_mod.F90#L417). Specifically, associate statements of the form
+
+```
+associate(col => mat_type(:)%a)
+```
+
+where `a` is a scalar element, results in `col` referring to contiguous memory being rather than having a proper stride to refer to each element `a`.
+
+It looks like this issue was fixed by `gfortran` version 4.9, but setting up Travis to build with a newer `gfortran` while also linking to the netCDF library is non-trivial.
+
 ### GFORTRAN 4.8 (netbook)
 
 This version of the compiler has issues with [Keith's bug](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=68546) (as seen by the last row in section 1) as well as a new bug that appears to be fixed in later versions (as seen by the last three entries in the second row).
