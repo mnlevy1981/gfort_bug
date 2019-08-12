@@ -1,18 +1,14 @@
-GFORTRAN 4.8 (netbook)
-------------
+### GFORTRAN 4.8 (netbook)
 
-rm -f a.out
-gfortran assoc.F90
-gfortran --version
+This version of the compiler has issues with [Keith's bug](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=68546) (as seen by the last row in section 1) as well as a new bug that appears to be fixed in later versions (as seen by the last three entries in the second row).
+```
+$ gfortran --version
 GNU Fortran (Ubuntu 4.8.5-4ubuntu8~14.04.2) 4.8.5
 Copyright (C) 2015 Free Software Foundation, Inc.
+```
 
-GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
-You may redistribute copies of GNU Fortran
-under the terms of the GNU General Public License.
-For more information about these matters, see the file named COPYING
-
-./a.out
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
@@ -32,22 +28,20 @@ For more information about these matters, see the file named COPYING
            0          10          20
  pass associated column to function expecting dimension(3)
            0          10          20
+```
 
-GFORTRAN 4.9 (netbook)
-------------
+### GFORTRAN 4.9 (netbook)
 
-rm -f a.out assoc.o
-gfortran-4.9 assoc.F90
-gfortran-4.9 --version
+This version of the compiler has issues with [Keith's bug](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=68546) but the problems seen in the second section with v4.8 have been resolved.
+
+```
+$ gfortran-4.9 --version
 GNU Fortran (Ubuntu 4.9.4-2ubuntu1~14.04.1) 4.9.4
 Copyright (C) 2015 Free Software Foundation, Inc.
+```
 
-GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
-You may redistribute copies of GNU Fortran
-under the terms of the GNU General Public License.
-For more information about these matters, see the file named COPYING
-
-./a.out
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
@@ -67,22 +61,20 @@ For more information about these matters, see the file named COPYING
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+```
 
-GFORTRAN 5 (netbook)
-----------
+### GFORTRAN 5 (netbook)
 
-rm -f a.out
-gfortran-5 assoc.F90
-gfortran-5 --version
+This version of the compiler has issues with [Keith's bug](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=68546) but the problems seen in the second section with v4.8 have been resolved.
+
+```
+$ gfortran-5 --version
 GNU Fortran (Ubuntu 5.5.0-12ubuntu1~14.04) 5.5.0 20171010
 Copyright (C) 2015 Free Software Foundation, Inc.
+```
 
-GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
-You may redistribute copies of GNU Fortran
-under the terms of the GNU General Public License.
-For more information about these matters, see the file named COPYING
-
-./a.out
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
@@ -102,19 +94,20 @@ For more information about these matters, see the file named COPYING
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+```
 
-GFORTRAN 6 (netbook)
-----------
+### GFORTRAN 6 (netbook)
 
-rm -f a.out
-gfortran-6 assoc.F90
-gfortran-6 --version
+This version of the compiler has issues with [Keith's bug](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=68546) but the problems seen in the second section with v4.8 have been resolved.
+
+```
+$ gfortran-6 --version
 GNU Fortran (Ubuntu 6.5.0-2ubuntu1~14.04.1) 6.5.0 20181026
 Copyright (C) 2017 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
 
-./a.out
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
@@ -134,19 +127,20 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+```
 
-GFORTRAN 7 (netbook)
-----------
+### GFORTRAN 7 (netbook)
 
-rm -f a.out
-gfortran-7 assoc.F90
-gfortran-7 --version
+This version of the compiler has issues with [Keith's bug](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=68546) but the problems seen in the second section with v4.8 have been resolved.
+
+```
+$ gfortran-7 --version
 GNU Fortran (Ubuntu 7.4.0-1ubuntu1~14.04~ppa1) 7.4.0
 Copyright (C) 2017 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
 
-./a.out
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
@@ -166,19 +160,20 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+```
 
-GFORTRAN 8 (netbook)
-----------
+### GFORTRAN 8 (netbook)
 
-rm -f a.out
-gfortran-8 assoc.F90
-gfortran-8 --version
+This version of the compiler has issues with [Keith's bug](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=68546) but the problems seen in the second section with v4.8 have been resolved.
+
+```
+$ gfortran-8 --version
 GNU Fortran (Ubuntu 8.3.0-16ubuntu3~14.04.2) 8.3.0
 Copyright (C) 2018 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
 
-./a.out
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
@@ -198,19 +193,20 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+```
 
-GFORTRAN 9 (netbook)
-----------
+### GFORTRAN 9 (netbook)
 
-rm -f a.out
-gfortran-9 assoc.F90
-gfortran-9 --version
+This version of the compiler has issues with [Keith's bug](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=68546) but the problems seen in the second section with v4.8 have been resolved. Given the date that the bug was closed, I would have expected all entries to be `0 1 2` with this version.
+
+```
+$ gfortran-9 --version
 GNU Fortran (Ubuntu 9.1.0-2ubuntu2~14.04.2) 9.1.0
 Copyright (C) 2019 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
 
-./a.out
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
@@ -230,17 +226,20 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+```
 
-IFORT 16 (hobart)
---------
+### IFORT 16 (hobart)
 
-rm -f a.out
-ifort assoc.F90
-ifort --version
+This compiler behaves as expected
+
+```
+$ ifort --version
 ifort (IFORT) 16.0.2 20160204
 Copyright (C) 1985-2016 Intel Corporation.  All rights reserved.
+```
 
-./a.out
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
@@ -260,17 +259,20 @@ Copyright (C) 1985-2016 Intel Corporation.  All rights reserved.
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+```
 
-IFORT 17 (hobart)
---------
+### IFORT 17 (hobart)
 
-rm -f a.out
-ifort assoc.F90
-ifort --version
+This compiler behaves as expected
+
+```
+$ ifort --version
 ifort (IFORT) 17.0.4 20170411
 Copyright (C) 1985-2017 Intel Corporation.  All rights reserved.
+```
 
-./a.out
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
@@ -290,17 +292,20 @@ Copyright (C) 1985-2017 Intel Corporation.  All rights reserved.
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+```
 
-IFORT 18 (hobart)
---------
+### IFORT 18 (hobart)
 
-rm -f a.out
-ifort assoc.F90
-ifort --version
+This compiler behaves as expected
+
+```
+$ ifort --version
 ifort (IFORT) 18.0.3 20180410
 Copyright (C) 1985-2018 Intel Corporation.  All rights reserved.
+```
 
-./a.out
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
            0           1           2
@@ -320,18 +325,22 @@ Copyright (C) 1985-2018 Intel Corporation.  All rights reserved.
            0           1           2
  pass associated column to function expecting dimension(3)
            0           1           2
+```
 
-PGI 18.1 (hobart)
---------
+### PGI 18.1 (hobart)
 
-rm -f a.out
-pgf90 assoc.F90
-pgf90 --version
+This compiler behaves as expected
+
+```
+$ pgf90 --version
 
 pgf90 18.1-1 64-bit target on x86-64 Linux -tp nehalem 
 PGI Compilers and Tools
 Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
-./a.out
+```
+
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
             0            1            2
@@ -351,18 +360,22 @@ Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
             0            1            2
  pass associated column to function expecting dimension(3)
             0            1            2
+```
 
-PGI 18.10 (hobart)
----------
+### PGI 18.10 (hobart)
 
-rm -f a.out
-pgf90 assoc.F90
-pgf90 --version
+This compiler behaves as expected
+
+```
+$ pgf90 --version
 
 pgf90 18.10-0 64-bit target on x86-64 Linux -tp nehalem 
 PGI Compilers and Tools
 Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
-./a.out
+```
+
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
             0            1            2
@@ -382,18 +395,22 @@ Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
             0            1            2
  pass associated column to function expecting dimension(3)
             0            1            2
+```
 
-PGI 19.4 (work laptop)
---------
+### PGI 19.4 (work laptop)
 
-rm -f a.out
-pgf90 assoc.F90
-pgf90 --version
+This compiler behaves as expected
+
+```
+$ pgf90 --version
 
 pgf90 19.4-0 64-bit target on macOS -tp haswell 
 PGI Compilers and Tools
 Copyright (c) 2019, NVIDIA CORPORATION.  All rights reserved.
-./a.out
+```
+
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
             0            1            2
@@ -413,15 +430,14 @@ Copyright (c) 2019, NVIDIA CORPORATION.  All rights reserved.
             0            1            2
  pass associated column to function expecting dimension(3)
             0            1            2
+```
 
-NAG 6.1 (hobart)
--------
+### NAG 6.1 (hobart)
 
-rm -f a.out
-nagfor assoc.F90
-NAG Fortran Compiler Release 6.1(Tozai) Build 6106
-[NAG Fortran Compiler normal termination]
-./a.out
+This compiler behaves as expected
+
+```
+$ ./a.out
  (1) Associate pointing to non-contiguous memory in a 3x3 matrix
  print a column of a matrix
  0 1 2
@@ -441,3 +457,4 @@ NAG Fortran Compiler Release 6.1(Tozai) Build 6106
  0 1 2
  pass associated column to function expecting dimension(3)
  0 1 2
+```
