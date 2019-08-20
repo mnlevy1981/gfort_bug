@@ -240,6 +240,39 @@ $ ./a.out
            0           1           2
 ```
 
+### GFORTRAN 9.2 (work laptop)
+
+This version of the compiler has issues with [Keith's bug](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=68546) but the problems seen in the second section with v4.8 have been resolved. Given the date that the bug was closed, I would have expected all entries to be `0 1 2` with this version as well.
+
+```
+$ gfortran --version
+GNU Fortran (Homebrew GCC 9.2.0) 9.2.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+```
+
+```
+$ ./a.out
+ (1) Associate pointing to non-contiguous memory in a 3x3 matrix
+ print a column of a matrix
+           0           1           2
+ print the associate column
+           0           1           2
+ pass associated column to function expecting dimension(:)
+           0           1           2
+ pass associated column to function expecting dimension(3)
+           0          10          20
+
+ (2) Associate pointing to scalar element in an array of derived type
+ print an array of derived-type elements
+           0           1           2
+ print the associate column
+           0           1           2
+ pass associated column to function expecting dimension(:)
+           0           1           2
+ pass associated column to function expecting dimension(3)
+           0           1           2
+```
+
 ### IFORT 16 (hobart)
 
 This compiler behaves as expected
